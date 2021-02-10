@@ -2,14 +2,17 @@ import "normalize.css";
 import "./Appli.scss";
 import EnTete from "./composants/EnTete";
 import BoutonAjoutCarte from "./composants/BoutonAjoutCarte";
-import GrilleSujets from "./composants/GrilleSujets";
+import GrilleSignets from "./composants/GrilleSignets";
 
 export default function Appli() {
+
+  const utilisateurConnecte = "Camille Semaan";
+
   return (
     <div className="Appli">
-      <EnTete />
+      <EnTete utilisateur={utilisateurConnecte} />
 
-      <GrilleSujets />
+      <GrilleSignets />
 
       <BoutonAjoutCarte />
     </div>
